@@ -1,0 +1,28 @@
+[package]
+name = "unidosx-terminal-emulator"
+version = "0.0.1-alpha.1"
+edition = "2024"
+description = "Detects the default terminal emulator using multiple detection methods allowing TUI applications work even in GUI environments."
+readme = "README.md"
+authors = ["KitsuVM <nashiradeer@gmail.com>"]
+repository = "https://github.com/kitsuvm/unidosx-engine"
+license = "MIT"
+keywords = ["unidosx", "terminal", "emulator", "terminal-emulator", "detection"]
+categories = ["command-line-interface"]
+
+[features]
+default = ["unix", "linux", "macos"]
+unix = ["env-var", "xdg-terminal-exec", "hardcoded", "gnome-settings", "kde-settings"]
+linux = ["xdg-terminal-exec", "x-terminal-emulator", "gnome-settings", "kde-settings", "hardcoded"]
+macos = ["terminal-app", "env-var"]
+terminal-app = []
+env-var = []
+xdg-terminal-exec = []
+x-terminal-emulator = []
+gnome-settings = []
+kde-settings = []
+hardcoded = ["hardcoded-traditional", "hardcoded-desktop-env", "hardcoded-modern", "hardcoded-extended"]
+hardcoded-traditional = []
+hardcoded-desktop-env = []
+hardcoded-modern = []
+hardcoded-extended = []
