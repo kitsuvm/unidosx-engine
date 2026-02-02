@@ -1,30 +1,5 @@
-[package]
-name = "demaintenance-tool"
-version = "0.0.2"
-edition = "2021"
-description = "A game created for the Global Game Jam 2024, theme: 'Make Me Laugh'."
-readme = "README.md"
-repository = "https://github.com/nashiradeer/ggj24-game"
-license = "GPL-3.0-or-later"
-keywords = ["ggj24", "game", "jam"]
-categories = ["games"]
-
-[dependencies]
-sysinfo = "0.30.5"
-
-[dependencies.cursive]
-package = "cursive"
-version = "0.20.0"
-features = ["crossterm-backend"]
-default-features = false
-
-[dependencies.kira]
-package = "kira"
-version = "0.8.6"
-features = ["cpal", "ogg"]
-default-features = false
-
-[target.'cfg(windows)'.dependencies]
-win-msgbox = "0.1.2"
-win32console = "0.1.5"
-windows = "0.52.0"
+[workspace]
+resolver = "2"
+members = [
+    "engine",
+]

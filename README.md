@@ -1,19 +1,16 @@
-# Team UNiDOsX // Demaintenance Tool
+# Team UNiDOsX // UNiDOsX Engine
 
-**Warning: This project has been deprecated and it's not receiving updates anymore.**
+This engine has been developed to make the process of developing terminal-based games easier and more efficient. The motivation behind is from KitsuVM's experience developing these types of games for the [Global Game Jam](https://globalgamejam.org/) events in 2024 and 2026.
 
-Your game didn't open? Are you missing or corrupted files? Don't worry! Discover our newest Demaintenance Tool!
+## Repository Structure
 
-[![GitHub](https://img.shields.io/github/v/release/nashiradeer/ggj24-game%20?style=for-the-badge&logo=github&logoColor=%23fff&label=GitHub&labelColor=%23181717&color=%23181717)](https://github.com/nashiradeer/ggj24-game/releases)
-[![Global Game Jam](https://img.shields.io/badge/Global%20Game%20Jam-005ea2?style=for-the-badge&labelColor=%23fff)
-](https://globalgamejam.org/)
+- `engine/`: Contains the code of the engine itself.
+- `terminal/`: Contains an abstraction layer over the different terminal backends.
+- `terminal-core/`: Contains the base code for the terminal backends.
+- `terminal-emulator/`: Contains a terminal emulator searcher and initializer.
+- `terminal-windows/`: Contains the Windows-specific terminal backends.
+- `terminal-unix/`: Contains the Unix-specific terminal backends.
 
-TODO: Create the game's description.
+## License
 
-## Building/running
-
-*There's no building/running method available for now.*
-
-## Credits
-
-Demaintenance Tool is a game created for [Global Game Jam 2024](https://globalgamejam.org/) by [Nashira Deer](https://github.com/nashiradeer), [Kenai](https://www.youtube.com/channel/UCSVBOHIBoWjkU-rzGc9_wtQ) and **Yuri Silva** licensed under the [GNU General Public License v3](https://github.com/nashiradeer/ggj24-game/blob/main/LICENSE.txt).
+This project is licensed under the [MIT License](LICENSE).

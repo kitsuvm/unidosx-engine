@@ -1,26 +1,22 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug executable 'ggj24-game'",
-            "cargo": {
-                "args": [
-                    "build",
-                    "--bin=ggj24-game",
-                    "--package=ggj24-game"
-                ],
-                "filter": {
-                    "name": "ggj24-game",
-                    "kind": "bin"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "env": {
-                "TERM": "xterm-256color"
-            }
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 'input_echo' example",
+      "type": "lldb",
+      "request": "launch",
+      "cargo": {
+        "args": [
+          "run",
+          "--package",
+          "unidosx-engine",
+          "--example",
+          "input_echo"
+        ]
+      }
+    }
+  ]
 }

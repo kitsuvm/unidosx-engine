@@ -1,0 +1,11 @@
+[package]
+name = "unidosx-terminal-core"
+version = "0.0.1-alpha.1"
+edition = "2024"
+description = "Contains shared code between the terminal backends of the UNiDOsX Engine."
+readme = "README.md"
+authors = ["KitsuVM <nashiradeer@gmail.com>"]
+repository = "https://github.com/kitsuvm/unidosx-engine"
+license = "MIT"
+keywords = ["unidosx", "terminal", "core", "cli", "tui"]
+categories = ["command-line-interface"]

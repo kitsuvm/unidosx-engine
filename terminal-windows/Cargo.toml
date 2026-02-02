@@ -1,0 +1,11 @@
+[package]
+name = "unidosx-terminal-windows"
+version = "0.0.1-alpha.1"
+edition = "2024"
+description = "Windows backends for the terminal module of the UNiDOsX Engine."
+readme = "README.md"
+authors = ["KitsuVM <nashiradeer@gmail.com>"]
+repository = "https://github.com/kitsuvm/unidosx-engine"
+license = "MIT"
+keywords = ["unidosx", "terminal", "windows", "backend", "tui"]
+categories = ["command-line-interface"]

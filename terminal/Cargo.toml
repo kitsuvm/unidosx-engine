@@ -1,0 +1,18 @@
+[package]
+name = "unidosx-terminal"
+version = "0.0.1-alpha.1"
+edition = "2024"
+description = "Abstraction layer over multiple terminal backends for the UNiDOsX Engine."
+readme = "README.md"
+authors = ["KitsuVM <nashiradeer@gmail.com>"]
+repository = "https://github.com/kitsuvm/unidosx-engine"
+license = "MIT"
+keywords = ["unidosx", "terminal", "cli", "tui"]
+categories = ["command-line-interface"]
+
+[features]
+#default = ["terminal-emulator"]
+emulator = ["dep:terminal-emulator"]
+
+[dependencies]
+terminal-emulator = { version = "0.0.1-alpha.1", optional = true, path = "../terminal-emulator" }
