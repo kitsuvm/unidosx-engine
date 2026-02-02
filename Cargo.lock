@@ -5,3 +5,22 @@ version = 4
 [[package]]
 name = "unidosx-engine"
 version = "0.0.1-alpha.1"
+
+[[package]]
+name = "unidosx-terminal"
+version = "0.0.1-alpha.1"
+dependencies = [
+ "unidosx-terminal-emulator",
+]
+
+[[package]]
+name = "unidosx-terminal-core"
+version = "0.0.1-alpha.1"
+
+[[package]]
+name = "unidosx-terminal-emulator"
+version = "0.0.1-alpha.1"
+
+[[package]]
+name = "unidosx-terminal-windows"
+version = "0.0.1-alpha.1"

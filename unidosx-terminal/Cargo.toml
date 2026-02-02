@@ -12,7 +12,7 @@ categories = ["command-line-interface"]
 
 [features]
 #default = ["terminal-emulator"]
-emulator = ["dep:terminal-emulator"]
+emulator = ["dep:unidosx-terminal-emulator"]
 
 [dependencies]
-terminal-emulator = { version = "0.0.1-alpha.1", optional = true, path = "../terminal-emulator" }
+unidosx-terminal-emulator = { version = "0.0.1-alpha.1", optional = true, path = "../unidosx-terminal-emulator" }

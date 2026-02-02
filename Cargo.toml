@@ -1,5 +1,9 @@
 [workspace]
 resolver = "2"
 members = [
-    "engine",
+    "unidosx-engine",
+    "unidosx-terminal",
+    "unidosx-terminal-core",
+    "unidosx-terminal-emulator",
+    "unidosx-terminal-windows",
 ]
